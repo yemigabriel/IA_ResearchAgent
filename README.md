@@ -39,6 +39,13 @@ Though no ML model is used, the agent exhibits adaptive, autonomous behavior.
 
 ---
 
+## Demo
+
+https://github.com/user-attachments/assets/beec6eb6-7784-4dc4-b0a4-90d8e3cb1d2a
+
+
+---
+
 ## Setup Instructions
 
 1. **Clone this repo**
