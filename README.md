@@ -1,6 +1,6 @@
-# Research Agent
+# Development Individual Project: Research Agent
 
-A hybrid intelligent agent built with Streamlit, designed to assist academic researchers by autonomously retrieving relevant research papers from online sources.
+Agent built with Streamlit, designed to assist academic researchers by autonomously retrieving relevant research papers from online sources.
 
 ---
 
@@ -10,7 +10,6 @@ A hybrid intelligent agent built with Streamlit, designed to assist academic res
 - Maintains internal state and adapts actions (model-based reflex agent)
 - Save paper metadata locally with SQLite
 - Export saved papers as CSV
-- Clean and modular Python codebase
 
 ---
 
@@ -26,7 +25,7 @@ This system uses a **hybrid intelligent agent approach**:
   - Makes autonomous decisions between structured API vs fallback scraping
   - Demonstrates awareness of environment state (API limits, failures)
 
-This aligns with **Russell & Norvig's model-based reflex agent** definition while incorporating basic decision-making logic. Though no ML model is used, the agent exhibits adaptive, autonomous behavior.
+Though no ML model is used, the agent exhibits adaptive, autonomous behavior.
 
 ---
 
@@ -45,7 +44,7 @@ This aligns with **Russell & Norvig's model-based reflex agent** definition whil
 1. **Clone this repo**
 ```bash
 git clone <repo-url>
-cd ai-research-agent
+cd IA_ResearchAgent
 ```
 
 2. **Install dependencies**
@@ -79,7 +78,7 @@ PYTHONPATH=. pytest
 
 ## Folder Structure
 ```
-ai-research-agent/
+IA_ResearchAgent/
 ├── app/
 │   ├── main.py
 │   ├── data_handler.py
@@ -90,23 +89,8 @@ ai-research-agent/
 ├── papers.db
 ├── requirements.txt
 ├── .env
-├── README.md
-└── saved_papers.csv (optional)
+└──  README.md
 ```
-
----
-
-## Screenshot Evidence
-| Step | Screenshot |
-|------|------------|
-| App launched successfully | `01_home_screen.png` |
-| SerpApi search results shown | `02_serpapi_success.png` |
-| Paper saved to database | `03_save_paper_success.png` |
-| Saved papers displayed | `04_saved_papers_list.png` |
-| Exported to CSV | `05_export_success.png` |
-| SerpApi failure triggers ArXiv fallback | `06_arxiv_fallback.png` |
-| Error handling works (invalid input / network) | `07_error_handling.png` |
-| Unit tests executed successfully | `08_pytest_output.png` |
 
 ---
 
